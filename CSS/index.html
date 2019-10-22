@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>belajar ::before and ::after</title>
+</head>
+
+<style>
+    div {
+        height: 200px;
+        width: 200px;
+        position: relative;
+        background: lightskyblue;
+        margin: 20px auto;
+    }
+
+    div::before,
+    div::after {
+        content: "";
+        width: 30px;
+        height: 30px;
+        position: absolute;
+    }
+
+    div::after {
+        top: -15px;
+        left: -15px;
+        background-color: salmon;
+    }
+
+    div::before {
+        bottom: -15px;
+        right: -15px;
+        background-color: lightgreen;
+    }
+</style>
+
+<body>
+    <div></div>
+</body>
+
+</html>
